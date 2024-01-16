@@ -1,0 +1,25 @@
+---
+title: "Connect to the GitHub"
+format: pdf
+---
+
+## Connect to the Github
+
+Install the package of "usethis" Then library it.
+
+```{r}
+# install.packages("usethis")
+library(usethis)
+create_github_token()
+```
+
+After create toke, set up the github token and copy it for next step use.
+
+```{r}
+#| echo: false
+# install.packages("gitcreds")
+library(gitcreds)
+gitcreds_set()
+```
+
+install a new packages called gitcreds and library it.Then use the code gitcreds_set() to open a new window. Paste down the toke you got from last steps.
